@@ -1,0 +1,17 @@
+{
+  "name": "makdown",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "23.1.0",
+    "markdown-it": "13.0.1",
+    "markdown-it-multimd-table": "4.2.0",
+    "markdown-it-task-lists": "2.1.1"
+  }
+}

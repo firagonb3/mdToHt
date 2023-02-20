@@ -1,0 +1,47 @@
+@import "components/css/header.css";
+@import "components/css/button.css";
+@import "components/css/textarealayaut.css";
+
+@import "components/css/makdown.css";
+
+:root {
+    --blanco: #fff;
+    --azul: #007bff;
+    --azul-alternativo: #0069d9;
+    --azul-alternativo2: #0069d998;
+    --sombra-azul: rgba(38, 143, 255, 0.5);
+    --sombra: 0 0 10px 0px black;
+    --min-width: 30em;
+}
+
+:root {
+    --body-background: aliceblue;
+}
+
+:root {
+    --header-Text-color: var(--blanco);
+    --header-background: var(--azul-alternativo2);
+    --header-sombra: var(--sombra);
+}
+
+:root {
+    --button-text-color: var(--blanco);
+    --button-background-color: var(--azul);
+    --button-background-hover: var(--azul-alternativo);
+    --button-shadow: var(--sombra-azul);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--body-background);
+    overflow: hidden;
+}

@@ -1,0 +1,26 @@
+.textarealayaut {
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: calc(100vh - 3.7em);
+    min-width: var(--min-width);
+}
+
+.textarealayaut textarea, .textarealayaut div {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border-radius: 6px;
+    margin: .2em;
+    min-width: var(--min-width);
+    padding: 2em;
+}
+
+.textarealayaut div {
+    font-family: monospace;
+    border-width: 1px;
+    border-style: solid;
+    background-color: rgba(239, 239, 239, 0.3);
+    border-color: rgba(118, 118, 118, 0.3);
+    overflow-y: auto;
+}

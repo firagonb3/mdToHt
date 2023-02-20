@@ -1,0 +1,17 @@
+.btn {
+    padding: .5em;
+    color: var(--button-text-color);
+    background-color: var(--button-background-color);
+    border-color: var(--button-background-color);
+    border-radius: .5em;
+}
+  
+.btn:hover {
+    color: --blanco;
+    background-color: var(--button-background-hover);
+    border-color: var(--button-background-hover);
+}
+  
+.btn:focus {
+    box-shadow: 0 0 0 0.2rem var(--button-shadow);
+}

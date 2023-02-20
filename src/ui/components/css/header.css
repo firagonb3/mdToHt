@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    padding: 0.5em;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--header-background);
+    color: var(--header-Text-color);
+    box-shadow: var(--header-sombra);
+    min-width: var(--min-width);
+    margin-bottom: .3em;
+}
+
+.header button {
+    margin-left: 1em;
+}
