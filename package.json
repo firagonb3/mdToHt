@@ -4,14 +4,28 @@
   "description": "",
   "main": "src/main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "productName": "Mi Aplicación",
+    "appId": "com.ejemplo.mi-aplicacion",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    }
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "electron": "23.1.0",
     "markdown-it": "13.0.1",
     "markdown-it-multimd-table": "4.2.0",
     "markdown-it-task-lists": "2.1.1"
+  },
+  "devDependencies": {
+    "electron": "23.1.0",
+    "electron-builder": "^23.6.0"
   }
 }
