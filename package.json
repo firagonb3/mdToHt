@@ -1,14 +1,14 @@
 {
-  "name": "makdown",
-  "version": "1.0.0",
-  "description": "",
+  "name": "mdToHt",
+  "version": "0.1.1",
+  "description": "Convertidor de makdown a html",
   "main": "src/main.js",
   "scripts": {
     "start": "electron .",
     "build": "electron-builder"
   },
   "build": {
-    "productName": "Mi Aplicación",
+    "productName": "mdToHt",
     "appId": "com.ejemplo.mi-aplicacion",
     "directories": {
       "output": "dist"
@@ -17,7 +17,7 @@
       "target": "nsis"
     }
   },
-  "author": "",
+  "author": "Firagon",
   "license": "ISC",
   "dependencies": {
     "markdown-it": "13.0.1",
@@ -26,6 +26,6 @@
   },
   "devDependencies": {
     "electron": "23.1.0",
-    "electron-builder": "^23.6.0"
+    "electron-builder": "23.6.0"
   }
 }

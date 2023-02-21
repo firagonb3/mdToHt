@@ -6,7 +6,10 @@ import { $ } from "../../controlers/utils.js";
 
 const idButton = "save";
 const idButton2 = "export";
-const data = "makdown"
+const data = "makdown";
+
+const textButton1 = "Guardar";
+const textButton2 = "Guardar*";
 
 export const headerview = header({
     Titel: "Conversor de MakDown a HTML",
@@ -23,17 +26,17 @@ $(document).ready(() => {
 
     $(`#${idButton}`).on('click', () => {
         $(`#${idmd}`).setLocalStorage(data);
-        $(`#${idButton}`).addHTML("Guardar");
+        $(`#${idButton}`).addHTML(textButton1);
     });
     
     $(document).on("keydown", (e) => {
         if (e.ctrlKey && e.key === "s") {
             $(`#${idmd}`).setLocalStorage(data);
-            $(`#${idButton}`).addHTML("Guardar");
+            $(`#${idButton}`).addHTML(textButton1);
         }
     });
 
     $(`#${idmd}`).on('input', (e) => {
-        $(`#${idButton}`).addHTML("Guardar *");
+        $(`#${idButton}`).addHTML(textButton2);
     });
 });

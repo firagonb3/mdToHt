@@ -1,6 +1,6 @@
-export function textarealayaut(ID1, ID2) { 
+export function textarealayaut(area) { 
    return   `<div class='textarealayaut'>
-                <textarea id='${ID1}' spellcheck="false"></textarea>
-                <div id='${ID2}'></div>
+                <textarea id='${area.id1}' spellcheck="false"></textarea>
+                <div id='${area.id2}'></div>
             </div>`
 }

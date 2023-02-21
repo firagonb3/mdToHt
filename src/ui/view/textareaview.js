@@ -6,7 +6,10 @@ export const idmd = "md";
 export const idht = "ht";
 const data = "makdown"
 
-export const converMdToHt = textarealayaut(idmd,idht);
+export const converMdToHt = textarealayaut({
+    id1: idmd,
+    id2: idht
+});
 
 $(document).ready(() => {
     $(`#${idmd}`).getLocalStorage(data);
