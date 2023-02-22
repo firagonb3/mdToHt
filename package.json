@@ -1,6 +1,6 @@
 {
   "name": "mdToHt",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Convertidor de makdown a html",
   "main": "src/main.js",
   "scripts": {
@@ -27,6 +27,6 @@
   },
   "devDependencies": {
     "electron": "23.1.0",
-    "electron-builder": "23.6.0"
+    "electron-builder": "22.10.3"
   }
 }
