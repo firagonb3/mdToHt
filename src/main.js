@@ -19,7 +19,7 @@ const createWindow = () => {
     });
 
     win.once('ready-to-show', () => {
-        if (isPackaged) {
+        if (isPackaged()) {
             win.webContents.openDevTools();
             win.setMenuBarVisibility(false);
         } else {
