@@ -1,6 +1,6 @@
 {
   "name": "mdToHt",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "description": "Convertidor de makdown a html",
   "main": "src/main.js",
   "scripts": {
@@ -17,9 +17,10 @@
       "target": "nsis"
     }
   },
-  "author": "Firagon",
-  "license": "ISC",
+  "author": "Marc Lecha Blesa",
+  "license": "MIT",
   "dependencies": {
+    "electron-is-packaged": "1.0.2",
     "markdown-it": "13.0.1",
     "markdown-it-multimd-table": "4.2.0",
     "markdown-it-task-lists": "2.1.1"

@@ -1,4 +1,4 @@
-const body = document.querySelector('body');
+const body = document.body;
 DOMcreate();
 
 const header = document.querySelector('header');

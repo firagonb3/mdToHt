@@ -1,4 +1,5 @@
 const {app, BrowserWindow, ipcMain} = require('electron');
+const isPackaged = require('electron-is-packaged');
 const { dialogExporFile } = require("./controlers/dialogExporFilesControler")
 
 const createWindow = () => {
@@ -18,21 +19,24 @@ const createWindow = () => {
     });
 
     win.once('ready-to-show', () => {
-        //win.setMenu(null)
-        win.webContents.openDevTools()
-        win.setMenuBarVisibility(false)
-        win.show()
+        if (isPackaged) {
+            win.webContents.openDevTools();
+            win.setMenuBarVisibility(false);
+        } else {
+            win.setMenu(null);
+        }
+        win.show();
     });
 
     win.loadFile('src/ui/index.html');
 }
 
 app.whenReady().then(() => {
-    createWindow()
+    createWindow();
 })
 
 app.on('window-all-closed', () => {
-    app.quit()
+    app.quit();
 })
 
 ipcMain.on('mostrar-dialogo', (event, context) => {
