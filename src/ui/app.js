@@ -13,4 +13,9 @@ $(document).on('click', (event) => {
     event.preventDefault()
     shell.openExternal(event.target.href)
   }
+
+  if (event.target.tagName === 'IMG' && event.target.src.startsWith('http')) {
+    event.preventDefault()
+    shell.openExternal(event.target.src)
+  }
 });

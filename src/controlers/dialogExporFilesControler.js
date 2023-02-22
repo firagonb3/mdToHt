@@ -34,9 +34,7 @@ function templated(context) {
     return `<!DOCTYPE html>
     <html lang='es'>
     <head>
-        <meta charset='UTF-8'>
-        <title>MakDown to HTML</title>
-        <style> #ht h1,#ht h2,#ht h3{font-weight:700}#ht ol,#ht p,#ht ul{margin:1rem 0}tbody tr:hover,th
+        #ht h1,#ht h2,#ht h3{font-weight:700}#ht ol,#ht p,#ht ul{margin:1rem 0}tbody tr:hover,th
         {background-color:#444;color:#fff}table,th{color:#fff}#ht h1{font-size:2.5rem;margin:2rem 0 1.5rem}
         #ht h2{font-size:2rem;margin:1.5rem 0 1rem}#ht h3{font-size:1.5rem;margin:1rem 0 .5rem}#ht li,
         #ht p{font-size:1rem;line-height:1.5}#ht ol,#ht ul{padding-left:2rem}#ht a{color:#007bff;

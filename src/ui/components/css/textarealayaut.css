@@ -16,6 +16,11 @@
     padding: 2em;
 }
 
+.textarealayaut textarea {
+    background-color: var(--textarea-background-color);
+    color: var(--textarea-color-text);
+}
+
 .textarealayaut div {
     font-family: monospace;
     border-width: 1px;
@@ -23,4 +28,5 @@
     background-color: rgba(239, 239, 239, 0.3);
     border-color: rgba(118, 118, 118, 0.3);
     overflow-y: auto;
+    color:var(--textarea-color-text)
 }

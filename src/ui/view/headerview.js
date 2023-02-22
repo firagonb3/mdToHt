@@ -20,8 +20,8 @@ export const headerview = header({
 });
 
 $(document).ready(() => {
-    $(`#${idButton2}`).on('click', () => {
-        ipcRenderer.send('mostrar-dialogo', `${$(`#${idht}`).e.outerHTML}`);
+    $(`#${idmd}`).on('input', (e) => {
+        $(`#${idButton}`).addHTML(textButton2);
     });
 
     $(`#${idButton}`).on('click', () => {
@@ -36,7 +36,13 @@ $(document).ready(() => {
         }
     });
 
-    $(`#${idmd}`).on('input', (e) => {
-        $(`#${idButton}`).addHTML(textButton2);
+    $(`#${idButton2}`).on('click', () => {
+        ipcRenderer.send('mostrar-dialogo', `${$(`#${idht}`).e.outerHTML}`);
+    });
+
+    $(document).on("keydown", (e) => {
+        if (e.ctrlKey && e.altKey && e.key === "s") {
+            ipcRenderer.send('mostrar-dialogo', `${$(`#${idht}`).e.outerHTML}`);
+        }
     });
 });

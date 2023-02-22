@@ -4,14 +4,24 @@
 
 @import "components/css/makdown.css";
 
-:root {
-    --blanco: #fff;
-    --azul: #007bff;
-    --azul-alternativo: #0069d9;
-    --azul-alternativo2: #0069d998;
-    --sombra-azul: rgba(38, 143, 255, 0.5);
-    --sombra: 0 0 10px 0px black;
+:root {    
     --min-width: 30em;
+
+    --sombra: 0 0 10px 0px black;
+    --sombra2: 0 0 10px 0px #ffffff91;
+
+    --blanco: #fff;
+    --white-background: #007bff;
+    --white-background2: #0069d998;
+    --white-background3: #0069d9;
+    --sombra-azulada: rgba(38, 143, 255, 0.5);
+
+    --amarillo-extrano: wheat;
+    --negro: #1c1c1c;
+    --gris-claro: #e0e0e0;
+    --gris-medio: #b8b8b8;
+    --azul-oscuro: #3c3c3c;
+    --gris-oscuro2: #424242
 }
 
 :root {
@@ -20,16 +30,50 @@
 
 :root {
     --header-Text-color: var(--blanco);
-    --header-background: var(--azul-alternativo2);
+    --header-background: var(--white-background3);
     --header-sombra: var(--sombra);
 }
 
 :root {
-    --button-text-color: var(--blanco);
-    --button-background-color: var(--azul);
-    --button-background-hover: var(--azul-alternativo);
-    --button-shadow: var(--sombra-azul);
+    --button-text-color: var(--negroco);
+    --button-background-color: var(--white-background);
+    --button-background-hover: var(--white-background2);
+    --button-shadow: var(--sombra-azulada);
 }
+
+:root {
+    --textarea-background-color: var(--blanco);
+    --textarea-color-text: var(--negro);
+    --table-text: var(--blanco);
+}
+
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --body-background: #1c1c1c;
+    }
+
+    :root {
+        --header-Text-color: var(--amarillo-extrano);
+        --header-background: var(--azul-oscuro);
+        --header-sombra: var(--sombra2);
+    }
+
+    :root {
+        --button-text-color: var(--negro);
+        --button-background-color: var(--gris-claro);
+        --button-background-hover: var(--gris-medio);
+        --button-shadow: var(--azul-oscuro);
+    }
+
+    :root {
+        --textarea-background-color: var(--gris-oscuro2);
+        --textarea-color-text: var(--amarillo-extrano);
+        --table-text: var(--amarillo-extrano);
+    }
+
+}
+
 
 * {
     padding: 0;
@@ -37,7 +81,8 @@
     box-sizing: border-box;
 }
 
-*::before, *::after {
+*::before,
+*::after {
     box-sizing: border-box;
 }
 

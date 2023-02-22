@@ -18,9 +18,9 @@ const createWindow = () => {
     });
 
     win.once('ready-to-show', () => {
-        win.setMenu(null)
-        //win.webContents.openDevTools()
-        //win.setMenuBarVisibility(false)
+        //win.setMenu(null)
+        win.webContents.openDevTools()
+        win.setMenuBarVisibility(false)
         win.show()
     });
 
