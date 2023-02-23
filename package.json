@@ -9,12 +9,19 @@
   },
   "build": {
     "productName": "mdToHt",
-    "appId": "com.ejemplo.mi-aplicacion",
+    "appId": "com.ejemplo.mdToHt",
     "directories": {
       "output": "dist"
     },
     "win": {
       "target": "nsis"
+    },"nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "runAfterFinish": false,
+      "license": "license"
     }
   },
   "author": "Marc Lecha Blesa",
