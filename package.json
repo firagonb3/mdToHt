@@ -21,7 +21,8 @@
       "allowElevation": true,
       "allowToChangeInstallationDirectory": true,
       "runAfterFinish": false,
-      "license": "license"
+      "license": "license",
+      "include": "build/installer.nsh"
     }
   },
   "author": "Marc Lecha Blesa",
