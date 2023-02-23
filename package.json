@@ -15,14 +15,18 @@
     },
     "win": {
       "target": "nsis"
-    },"nsis": {
+    },
+    "nsis": {
       "oneClick": false,
-      "perMachine": false,
+      "perMachine": true,
       "allowElevation": true,
       "allowToChangeInstallationDirectory": true,
       "runAfterFinish": false,
+      "deleteAppDataOnUninstall": true,
+      "createStartMenuShortcut": true,
       "license": "license",
       "include": "build/installer.nsh"
+
     }
   },
   "author": "Marc Lecha Blesa",
@@ -35,6 +39,6 @@
   },
   "devDependencies": {
     "electron": "23.1.0",
-    "electron-builder": "22.10.3"
+    "electron-builder": "23.6.0"
   }
 }
