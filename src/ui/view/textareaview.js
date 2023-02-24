@@ -29,7 +29,9 @@ $(document).ready(() => {
     $(`#${idmd}`).on('drop', async (e) => {
         e.preventDefault();
         const file = await ipcRenderer.invoke('readFile', `${e.dataTransfer.files[0].path}`);
-        $(`#${idmd}`).e.value = file;
-        $(`#${idht}`).addHTML(mdtoht($(`#${idmd}`).e.value));
+        if (file !== undefined) {
+            $(`#${idmd}`).e.value = file;
+            $(`#${idht}`).addHTML(mdtoht($(`#${idmd}`).e.value));
+        } 
     });
 });

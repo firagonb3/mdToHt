@@ -5,17 +5,15 @@ import { addViewHeader, addViewMain } from '../controlers/DOMControler.js';
 import { headerview } from './view/headerview.js';
 import { converMdToHt } from './view/textareaview.js';
 
+const regex = /^(https?:\/\/)/i;
+
 addViewHeader(headerview);
 addViewMain(converMdToHt);
 
 $(document).on('click', (event) => {
-  if (event.target.tagName === 'A' && event.target.href.startsWith('http')) {
-    event.preventDefault()
-    shell.openExternal(event.target.href)
-  }
-
-  if (event.target.tagName === 'IMG' && event.target.src.startsWith('http')) {
-    event.preventDefault()
-    shell.openExternal(event.target.src)
+  event.preventDefault();
+  const link = event.target.tagName === 'A' ? event.target.href : event.target.parentNode.href;
+  if (regex.test(link)) {
+    shell.openExternal(link);
   }
 });

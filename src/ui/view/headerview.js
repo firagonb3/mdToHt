@@ -4,12 +4,12 @@ import { header } from "../components/header.js";
 import { idmd, idht } from "./textareaview.js";
 import { $ } from "../../controlers/utils.js";
 
-const idButton = "save";
+export const idButton = "save";
 const idButton2 = "export";
 const data = "makdown";
 
 const textButton1 = "Guardar";
-const textButton2 = "Guardar*";
+export const textButton2 = "Guardar*";
 
 export const headerview = header({
     Titel: "Conversor de MakDown a HTML",
@@ -44,5 +44,9 @@ $(document).ready(() => {
         if (e.ctrlKey && e.altKey && e.key === "s") {
             ipcRenderer.send('mostrar-dialogo', `${$(`#${idht}`).e.outerHTML}`);
         }
+    });
+    $(`#${idmd}`).on('drop', async (e) => {
+        e.preventDefault();
+        $(`#${idButton}`).addHTML(textButton2);
     });
 });

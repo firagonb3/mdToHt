@@ -1,9 +1,13 @@
 
+const markdownIt = require('markdown-it');
+const md = new markdownIt({
+  html: true
+});
+md.use(require('markdown-it-multimd-table'));
+md.use(require('markdown-it-task-lists'));
+
 export function mdtoht(ts) {
-    const md = require('markdown-it')()
-    md.use(require('markdown-it-multimd-table'))
-    md.use(require('markdown-it-task-lists'));
-    return md.render(ts);
+  return md.render(ts);
 }
 
 /*

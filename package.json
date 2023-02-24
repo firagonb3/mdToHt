@@ -1,15 +1,31 @@
 {
-  "name": "mdToHt",
-  "version": "0.1.4",
-  "description": "Convertidor de makdown a html",
+  "name": "mdtoht",
+  "version": "0.1.5",
+  "description": "A markdown to HTML converter.",
   "main": "src/main.js",
+  "author": "Marc Lecha Blesa",
+  "license": "MIT",
+  "engines": {
+    "npm": "8.19.2",
+    "node": "18.12.1"
+  },
   "scripts": {
     "start": "electron .",
     "build": "electron-builder"
   },
+  "dependencies": {
+    "electron-is-packaged": "1.0.2",
+    "markdown-it": "13.0.1",
+    "markdown-it-multimd-table": "4.2.0",
+    "markdown-it-task-lists": "2.1.1"
+  },
+  "devDependencies": {
+    "electron": "23.1.0",
+    "electron-builder": "23.6.0"
+  },
   "build": {
     "productName": "mdToHt",
-    "appId": "com.ejemplo.mdToHt",
+    "appId": "com.example.mdtoht",
     "directories": {
       "output": "dist"
     },
@@ -26,19 +42,6 @@
       "createStartMenuShortcut": true,
       "license": "license",
       "include": "build/installer.nsh"
-
     }
-  },
-  "author": "Marc Lecha Blesa",
-  "license": "MIT",
-  "dependencies": {
-    "electron-is-packaged": "1.0.2",
-    "markdown-it": "13.0.1",
-    "markdown-it-multimd-table": "4.2.0",
-    "markdown-it-task-lists": "2.1.1"
-  },
-  "devDependencies": {
-    "electron": "23.1.0",
-    "electron-builder": "23.6.0"
   }
 }
