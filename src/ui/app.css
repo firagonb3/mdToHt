@@ -1,3 +1,4 @@
+@import "components/css/scroll.css";
 @import "components/css/header.css";
 @import "components/css/button.css";
 @import "components/css/textarealayaut.css";
@@ -47,6 +48,11 @@
     --table-text: var(--blanco);
 }
 
+:root {
+    --scrollbar-track: var(--gris-claro);
+    --scrollbar-thumb: var(--white-background);
+}
+
 
 @media (prefers-color-scheme: dark) {
     :root {
@@ -70,6 +76,11 @@
         --textarea-background-color: var(--gris-oscuro2);
         --textarea-color-text: var(--amarillo-extrano);
         --table-text: var(--amarillo-extrano);
+    }
+
+    :root {
+        --scrollbar-track: var(--amarillo-extrano);
+        --scrollbar-thumb: var(--negro);
     }
 
 }

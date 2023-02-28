@@ -90,7 +90,7 @@ table {
     font-family: sans-serif;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     background-color: #1e1e1e;
-    color: --table-text;
+    color: var(--table-text);
   }
   
   th, td {
@@ -101,7 +101,6 @@ table {
   
   th {
     background-color: #444;
-    color: --table-text;
     border-bottom: 2px solid #ddd;
   }
   
