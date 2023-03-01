@@ -1,6 +1,6 @@
 <h1 align="center">Welcome to mdToHt 👋</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-0.1.5-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1.6-blue.svg?cacheSeconds=2592000" />
   <img src="https://img.shields.io/badge/npm-8.19.2-blue.svg" />
   <img src="https://img.shields.io/badge/node-18.12.1-blue.svg" />
   <a href="#" target="_blank">
