@@ -1,6 +1,6 @@
 {
   "name": "mdtoht",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A markdown to HTML converter.",
   "main": "src/main.js",
   "author": "Marc Lecha Blesa",
