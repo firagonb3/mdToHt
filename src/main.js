@@ -29,6 +29,13 @@ const createWindow = () => {
         win.show();
     });
 
+    win.webContents.setWindowOpenHandler(({ url }) => {
+        if (url.startsWith('https:') || url.startsWith('http:')) {
+            shell.openExternal(url)
+            return { action: 'deny' }
+        }
+    });
+
     win.loadFile('src/ui/index.html');
 }
 
