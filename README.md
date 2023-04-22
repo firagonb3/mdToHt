@@ -8,12 +8,8 @@
   </a>
 </p>
 
-> A markdown to HTML converter.
+> mdToHt is a desktop application based on Electron that allows for real-time conversion of Markdown to HTML. The application features an intuitive and easy-to-use interface that displays the Markdown text written in a panel on the left and the converted HTML version in another panel on the right. Additionally, the application allows for the loading of .md files for real-time conversion.
 
-## Prerequisites
-
-- npm 8.19.2
-- node 18.12.1
 
 ## Install
 
