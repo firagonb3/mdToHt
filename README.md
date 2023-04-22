@@ -52,4 +52,5 @@ npm run build
 ---
 ## Screenshots
 
-
+[![Image-3.png](https://i.postimg.cc/dtHPB8V9/Image-3.png)](https://postimg.cc/SJMvQY8X)
+[![Image-2.png](https://i.postimg.cc/DwJDPHD2/Image-2.png)](https://postimg.cc/xXQt0xn7)
