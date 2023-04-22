@@ -10,7 +10,7 @@
 
 # Documentation
 
-## Description:
+## Description
 > mdToHt is a desktop application based on Electron that allows for real-time conversion of Markdown to HTML. The application features an intuitive and easy-to-use interface that displays the Markdown text written in a panel on the left and the converted HTML version in another panel on the right. Additionally, the application allows for the loading of .md files for real-time conversion. 
 >## Instructions for use:
 >To use the mdToHt application, follow these steps:
@@ -18,7 +18,7 @@
 >2. Write or paste your content in the panel on the left. The application will convert it in real-time and display the HTML version in the panel on the right.
 >3. Once you are satisfied with the HTML version of your content, click on the export button in the top right corner to download the content in HTML.
 >4. Once you are satisfied with the HTML version of your content, click on the export button in the top right corner to download the content in HTML.
->## Atajos de teclado
+>## Keyboard shortcuts
 >Sure! Here are the keyboard shortcuts for mdToHt:
 >+ To save your content: Ctrl + S
 >+ To export your content as HTML: Ctrl + Alt + S
